@@ -1,0 +1,15 @@
+GEM
+  remote: https://ruby.taobao.org/
+  specs:
+    motion-gradle (2.1.0)
+    rake (0.9.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-gradle
+  rake
+
+BUNDLED WITH
+   1.11.2

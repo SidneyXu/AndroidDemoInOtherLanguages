@@ -1,0 +1,5 @@
+source 'https://ruby.taobao.org/'
+
+gem 'rake'
+# Add your dependencies here:
+gem 'motion-gradle'

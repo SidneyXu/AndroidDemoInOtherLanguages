@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+$:.unshift('/Library/RubyMotion/lib')
+require 'motion/project/template/android'
+require 'rubygems'
+require 'motion-gradle'
+
+begin
+  require 'bundler'
+  Bundler.require
+rescue LoadError
+end
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'RubyAndroid'
+  # Replace `sdk_path` and `ndk_path` first
+  app.sdk_path='/Users/sidneyxu/dev/tools/sdk'
+  app.ndk_path='/Users/sidneyxu/dev/tools/ndk'
+  app.package='com.bookislife.android.rubydemo'
+  app.gradle do
+    dependency 'com.android.support:appcompat-v7:23.1.1'
+  end
+  app.permissions << 'android.permission.INTERNET'
+  app.permissions << 'android.permission.ACCESS_NETWORK_STATE'
+  app.main_activity = 'MainActivity'
+  app.sub_activities << 'CountryListActivity'
+  app.theme='@style/AppTheme'
+  app.vendor_project jar: "vendor/volley-1.0.9.jar"
+end
