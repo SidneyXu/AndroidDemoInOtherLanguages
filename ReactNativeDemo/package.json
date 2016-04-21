@@ -1,0 +1,23 @@
+{
+  "name": "ReactNativeDemo",
+  "author": "SidneyXu",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "immutable": "^3.7.6",
+    "key-mirror": "^1.0.1",
+    "react": "^0.14.8",
+    "react-native": "^0.23.1",
+    "react-native-button": "^1.4.2",
+    "react-native-navbar": "^1.4.2",
+    "react-native-router-flux": "^3.2.8",
+    "react-redux": "^4.4.2",
+    "redux": "^3.4.0",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.0.1",
+    "remote-redux-devtools": "^0.1.5"
+  }
+}
